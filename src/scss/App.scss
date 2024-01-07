@@ -1,0 +1,34 @@
+@use "./color.scss" as c;
+
+.app {
+  display: flex;
+  background-color: c.$main-background;
+.left-side-menu {
+    border-radius: 5px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-color: c.$disable;
+    min-width: 250px;
+    max-width: 250px;
+    order: 1;
+    min-height: 100vh;
+    height: 1000vh;
+    flex-grow: 1;
+    width: 250px;
+    margin: 0px;
+    &.collapsed {
+      min-width: 80px;
+      max-width: 80px;
+    }
+    button {
+      width: calc(100% - 5px);
+      border-top-width: 1px;
+      border-color: c.$disable;
+    }
+}
+.content {
+  order: 2;
+  padding: 10px;
+  text-align: center;
+}
+}
