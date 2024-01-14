@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default class Home extends React.Component {
   state = {
   };
@@ -7,7 +8,7 @@ export default class Home extends React.Component {
   render() {
     return (
       <div className="home">
-        Home Page
+       home
       </div>
     );
   }

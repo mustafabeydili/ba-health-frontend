@@ -8,13 +8,22 @@ import HealthOffer from './pages/HealthOffer';
 import AccommodationOffer from './pages/AccommodatinOffer';
 import TravelOffer from './pages/TravelOffer';
 import RentaCar from './pages/RentaCar';
-
+import Login from "./pages/Login";
 export default class App extends React.Component {
   state = {
+    login: true
   };
+  componentDidMount() {
 
+  }
   render() {
+    const {login} = this.state;
     return (
+      <>
+      {
+      login ? 
+      <Login />
+      :
       <div className="app">
       <LeftSideMenu />
       
@@ -27,7 +36,10 @@ export default class App extends React.Component {
           <Route path="/" element={<Home />} />
       </Routes>
       </div>  
-    </div>  
+    </div> 
+    }
+      </>
+       
     );
   }
 }
