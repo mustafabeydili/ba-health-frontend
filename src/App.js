@@ -1,31 +1,25 @@
-import LeftSideMenu from './components/left-side-menu/LeftSideMenu';
+import Header from './components/header/Header';
 import React from "react";
 import './scss/App.scss';
 import 'antd/dist/reset.css';
+import 'flexboxgrid/dist/flexboxgrid.min.css'
 import {Route,Routes} from "react-router-dom";
 import Home from './pages/Home';
 import HealthOffer from './pages/HealthOffer';
 import AccommodationOffer from './pages/AccommodatinOffer';
 import TravelOffer from './pages/TravelOffer';
 import RentaCar from './pages/RentaCar';
-import Login from "./pages/Login";
 export default class App extends React.Component {
   state = {
-    login: true
   };
   componentDidMount() {
 
   }
   render() {
-    const {login} = this.state;
     return (
       <>
-      {
-      login ? 
-      <Login />
-      :
       <div className="app">
-      <LeftSideMenu />
+      <Header />
       
       <div className='content'>
       <Routes>
@@ -37,7 +31,6 @@ export default class App extends React.Component {
       </Routes>
       </div>  
     </div> 
-    }
       </>
        
     );

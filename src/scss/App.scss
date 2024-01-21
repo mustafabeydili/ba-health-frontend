@@ -1,51 +1,34 @@
 @use "./color.scss" as c;
-.login{
-  background-color: #a6f77b;
-  width: 100vw;
-  height: 100vh;
-  .login-form {
-  width: 400px;
-  height: 400px;
-  background: #fbfbfb;
-  border-radius: 8px;
-  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.65);
-  position: fixed;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  
-}
-}
-
+@use "./helper.scss" as h;
 .app {
-  display: flex;
-  background-color: c.$main-background;
-.left-side-menu {
-    border-radius: 5px;
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-color: c.$disable;
-    min-width: 250px;
-    max-width: 250px;
-    order: 1;
-    min-height: 100vh;
-    height: 1000vh;
-    flex-grow: 1;
-    width: 250px;
-    margin: 0px;
-    &.collapsed {
-      min-width: 80px;
-      max-width: 80px;
+  @include h.flex-center;
+.header {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background: transparent;
+  box-shadow: none;
+  border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+  .title {
+    @include h.flex-center;
+    span {
+      font-weight: 600;
+      font-size: 26px;
     }
-    button {
-      width: calc(100% - 5px);
-      border-top-width: 1px;
-      border-color: c.$disable;
-    }
+  }
+  .menu {
+    height: 60px;
+    justify-content: right;
+    border-bottom: none;
+  }
 }
 .content {
-  order: 2;
-  padding: 10px;
-  text-align: center;
+  max-width: 1170px;
+  margin-top: 100px;
+  .home {
+    background: url('/assets/world-map.jpg') no-repeat center;
+  }
 }
 }
