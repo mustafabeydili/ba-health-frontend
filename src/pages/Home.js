@@ -1,6 +1,6 @@
 import React from "react";
 import { Input } from 'antd';
-
+import product from './../assets/products.jpg'
 const { Search } = Input;
 export default class Home extends React.Component {
   state = {
@@ -8,6 +8,7 @@ export default class Home extends React.Component {
 
   render() {
     return (
+      <>
       <div className="home">
         <div className="row">
         <div className="slogan col-lg-5 col-md-4 col-sm-12 col-xs-12">
@@ -25,15 +26,36 @@ export default class Home extends React.Component {
           </h5>
         </div>
          
-          <div className=" col-lg-7 col-md-8 col-sm-12 col-xs-12">
-          
+          <div className="col-lg-7 col-md-8 col-sm-12 col-xs-12">
+            <div className="take-offer">
+
+            </div>
         </div>
         </div> 
-        <div className="search">
+        <div className="search row">
             <Search placeholder="Hastane , Hotel , Araç Arayın" enterButton="Search" size="large" loading />
         </div>
-
+      
         </div>
+        <div className="row links">
+        <div className="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+         SAĞLIK
+        </div>
+         
+        <div className=" col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          KONAKLAMA
+        </div>
+        <div className=" col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          SEYAHAT/GEZİ
+        </div>
+        <div className=" col-lg-3 col-md-3 col-sm-3 col-xs-3">
+          ARAÇ KİRALAMA
+        </div>
+      
+        </div> 
+        <img className="product" src={product}></img>
+      </>
+      
     );
   }
 }
