@@ -1,6 +1,10 @@
 import React from "react";
 import { Input } from 'antd';
 import product from './../assets/products.jpg'
+import searchLeft from './../assets/search-left.png'
+import searchRight from './../assets/search-right.png'
+import TakeOffer from './../components/TakeOffer'
+
 const { Search } = Input;
 export default class Home extends React.Component {
   state = {
@@ -28,20 +32,26 @@ export default class Home extends React.Component {
          
           <div className="col-lg-7 col-md-8 col-sm-12 col-xs-12">
             <div className="row">
-              <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+              <div className="col-lg-9 col-md-9 col-sm-6 col-xs-6">
 
               </div>
-              <div className="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-              <div className="take-offer">
-
-              </div>
+              <div className="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <TakeOffer></TakeOffer>
               </div>
             </div>
            
         </div>
         </div> 
-        <div className="search row">
-            <Search placeholder="Hastane , Hotel , Araç Arayın" enterButton="Search" size="large" loading />
+        <div className="search row bottom-lg">
+        <div className="col-lg-1 col-md-3 col-sm-3 col-xs-3">
+         <img src={searchLeft}></img>
+        </div>
+        <div className="col-lg-10 col-md-3 col-sm-3 col-xs-3">
+          <Search placeholder="Hastane , Hotel , Araç Arayın" enterButton="Search" size="large" loading />
+        </div>
+        <div className="col-lg-1 col-md-3 col-sm-3 col-xs-3">
+        <img src={searchRight}></img>
+        </div>
         </div>
       
         </div>

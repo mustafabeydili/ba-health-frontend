@@ -1,6 +1,6 @@
 import React from "react";
-import { Menu, Button } from 'antd';
-import { HomeOutlined, RiseOutlined , AimOutlined ,FileImageOutlined,CarOutlined,BranchesOutlined} from '@ant-design/icons';
+import { Menu } from 'antd';
+import { BranchesOutlined} from '@ant-design/icons';
 import {Link} from "react-router-dom"; 
 const { SubMenu } = Menu;
 
@@ -33,16 +33,16 @@ export default class Header extends React.Component {
                   <Link to="/">Ana Sayfa</Link>
                 </Menu.Item>
                 <Menu.Item key="healthOffer">
-                  <Link to="/healthOffer">Sağlık Teklifi</Link>
+                  <Link to="/healthOffer">İş Ortaklarımız</Link>
                 </Menu.Item>
                 <Menu.Item key="acommodationOffer">
-                  <Link to="/accommodationOffer">Konaklama Teklifi</Link>
+                  <Link to="/accommodationOffer">Hasta Rehberi</Link>
                 </Menu.Item>
                 <Menu.Item key="travelOffer" >
-                  <Link to="/travelOffer">Seyahat / Gezi Teklifi</Link>
+                  <Link to="/travelOffer">Biz Kimiz?</Link>
                 </Menu.Item>
                 <Menu.Item key="rentaCar">
-                  <Link to="/rentaCar">Rent A Car</Link>
+                  <Link to="/rentaCar">İletişim</Link>
                 </Menu.Item>
                 <SubMenu
                     key="sub2"

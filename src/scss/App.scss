@@ -25,15 +25,15 @@
     height: 60px;
     justify-content: right;
     border-bottom: none;
+    color: #FF5733;
+  
   }
 }
 .content {
-  max-width: 1170px;
-  margin-top: 100px;
+  margin-top: 65px;
   .home {
     position: relative;
-    width: 1170px;
-    height: 500px;
+    height: 100%;
     background: url('/assets/banner.jpg');
     background-size: 100% 100% !important;
     .slogan{
@@ -44,7 +44,33 @@
       color: c.$white-alternative;
     }
     .search {
-      margin: 100px 50px 50px 50px;
+      padding-bottom: 50px;
+      margin-top: 75px;
+      input,button,img {
+        height: 60px !important;
+      }
+      img{
+        margin-left: 30px;
+      }
+    }
+    .take-offer {
+      border-radius: 30px;
+      box-shadow: 2px 2px gray;
+      background-color: c.$white-alternative;
+      margin-top: 50px;
+      padding: 10px;
+      .title {
+        @include h.flex-center;
+      }
+      .offer-button {
+          @include h.flex-center;
+          button {
+            border-radius: 20px;
+          }
+      }
+      .ant-input-affix-wrapper  {
+        border-radius: 20px;
+      }
     }
   }
   .links {
@@ -63,12 +89,16 @@
     height: 200px;
     position: relative;
   }
-  .take-offer {
-    height: 100%;
-    border-radius: 8px;
-    box-shadow: 2px 2px gray;
-    background-color: c.$white-alternative;
-    margin-top: 50px;
-  }
+ 
 }
+}
+
+
+
+
+.ant-menu .ant-menu-item-selected {
+  color: #FF5733 !important;
+}
+.ant-menu-item-selected::after {
+  border-bottom-color: #FF5733 !important;
 }
