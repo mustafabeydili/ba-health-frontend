@@ -11,7 +11,7 @@ export default class SpecialHealth extends React.Component {
   render() {
     return (
       <div className="row">
-        <div className="card col-lg-3">
+        <div className="card col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <img src={Sayfa21}></img>
         <div className="special-info">
             <span className="title"> Diş Hekimliği</span>
@@ -19,7 +19,7 @@ export default class SpecialHealth extends React.Component {
             <span className="title">Gülüş Tasarımı</span>
         </div>
         </div>
-        <div className="card col-lg-3">
+        <div className="card col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <img src={Sayfa22}></img>
         <div className="special-info">
             <span className="title">Plastik Cerrahi</span>
@@ -27,7 +27,7 @@ export default class SpecialHealth extends React.Component {
             <span className="title">Meme Ameliyatı</span>
         </div>
         </div>
-        <div className="card col-lg-3">
+        <div className="card col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <img src={Sayfa23}></img>
         <div className="special-info">
             <span className="title">Saç Ekimi</span>
@@ -35,7 +35,7 @@ export default class SpecialHealth extends React.Component {
             <span className="title">Gülüş Tasarımı</span>
         </div>
         </div>
-        <div className="card col-lg-3">
+        <div className="card col-lg-3 col-md-3 col-sm-6 col-xs-12">
         <img src={Sayfa24}></img>
         <div className="special-info">
             <span className="title"> Diş Hekimliği</span>
