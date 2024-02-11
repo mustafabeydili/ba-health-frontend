@@ -8,6 +8,7 @@ import rentcar from './../assets/rentcar.jpg'
 import travel from './../assets/travel.jpg'
 import TakeOffer from './../components/TakeOffer'
 import SpecialHealth from './../components/SpecialHealth'
+import SpecialJob from './../components/SpecialJob'
 
 const { Search } = Input;
 export default class Home extends React.Component {
@@ -84,6 +85,9 @@ export default class Home extends React.Component {
         </div> 
         <div className="special-health">
           <SpecialHealth></SpecialHealth>
+        </div>
+        <div className="special-job">
+        <SpecialJob></SpecialJob>
         </div>
       </>
       
