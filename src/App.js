@@ -3,6 +3,8 @@ import React from "react";
 import './scss/App.scss';
 import 'antd/dist/reset.css';
 import 'flexboxgrid/dist/flexboxgrid.min.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import {Route,Routes} from "react-router-dom";
 import Home from './pages/Home';
 import HealthOffer from './pages/HealthOffer';

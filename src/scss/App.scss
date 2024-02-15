@@ -1,7 +1,6 @@
 @use "./color.scss" as c;
 @use "./helper.scss" as h;
 .app {
-  @include h.flex-center;
   .row{
     margin-left: 0px !important;
     margin-right: 0px !important;
@@ -140,6 +139,19 @@
         margin-top:10px ;
       }
     
+  }
+  .in-network-provider {
+    .title {
+      @include h.flex-center;
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .slider-container {
+      img {
+        height: 100px !important;
+      }
+    }
   }
  
 }
