@@ -9,6 +9,7 @@ import travel from './../assets/travel.jpg'
 import TakeOffer from './../components/TakeOffer'
 import SpecialHealth from './../components/SpecialHealth'
 import SpecialJob from './../components/SpecialJob'
+import InNetworkHospital from './../components/InNetworkHospital'
 import InNetworkProvider from './../components/InNetworkProvider'
 const { Search } = Input;
 export default class Home extends React.Component {
@@ -89,11 +90,13 @@ export default class Home extends React.Component {
         <div className="special-job">
           <SpecialJob></SpecialJob>
         </div>
+        <div className="in-network-hospital">
+        <InNetworkHospital></InNetworkHospital>
+        </div>
         <div className="in-network-provider">
         <InNetworkProvider></InNetworkProvider>
         </div>
       </>
-      
     );
   }
 }

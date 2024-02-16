@@ -12,7 +12,7 @@ import sixt from './../assets/kurumlar/sixt.png'
 import sheraton from './../assets/kurumlar/sheraton.png'
 
 
-export default class SpecialJob extends React.Component {
+export default class InNetworkProvider extends React.Component {
   state = {
   };
   settings = {

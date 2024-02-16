@@ -153,6 +153,20 @@
       }
     }
   }
+
+  .in-network-hospital {
+    .title {
+      @include h.flex-center;
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .slider-container {
+      img {
+        height: 100px !important;
+      }
+    }
+  }
  
 }
 }
